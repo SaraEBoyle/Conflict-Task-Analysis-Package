@@ -1,12 +1,18 @@
 # Conflict-Task-Analysis-Package
 ## Task Description
 Photometry analysis for the platform mediated conflict task, in which mice must balance their desire for a reward with the risk of electric shock (behavioral task adapted for mice by Christian Bravo). In this task, mice learn to avoid a mild shock by taking shelter on top of an insulated platform. A 20 second beep plays directly before the shock, giving mice time to retreat to the platform. In the low-conflict version of this task, a water or sugar water reward is available at a water port opposite the platform at all times, so the mice must leave the safety of the platform for the reward, but can do so without much risk (since they know the shock won't start unless the sound plays). In the high conflict task, the liquid reward is only available during the 20 second tone predicting the shock. This requires the mice to balance the increased risk with their desire for the reward. 
-![Task summay](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/e99fd5c2-2d88-4a85-a7bc-93479262bc13)
+
+<p align="center">
+  <img width=800 src="https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/964ee017-cfc1-4dba-bc8e-f8b7d6d0917c" alt="Task Diagram" />
+</p>
+
 ## Analysis Summary
 
 My analysis package takes video from recorded sessions of this task, tracks the location of the mouse, and calculates the time mice spend in the safety of the platform vs. in front of the water reward. By tracking the location of the mice during different timepoints, we can track how individual mice respond to risky situations. Here's an example of the tracking in a high conflict session in which the mouse receives a shock:
 
-![mouse_tracking](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/428a3bab-ce66-4ea2-af72-8ffe697cf3a0)
+<p align="center">
+  <img width=800 src="https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/7bd1aa71-575d-4b5c-87bd-b38bcd418b22" alt="mouse_trackingmouse_tracking" />
+</p>
 
 ## Tracking the Mice in Low and High Conflict
 
@@ -14,7 +20,7 @@ For each individual mouse, my code tracks the location through the entire sessio
 
 In high conflict (HC) sessions, the reward is only available during the sound period. So, this particular mouse chooses to spend more time in front of the reward port during the sound, a much riskier behavior than in the low conflict session. This allows the mouse to receive rewards, but resulted in it receiving a shock in one of the trials. This behavior is also reflected in the number of times this mouse poked its nose into the reward port (which I measured using a beam breaker). 
 
-![platform likelihood and tracking](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/fdfef18e-bc04-49f8-ad47-1b0d229af4b4)
+![platform likelihood and tracking](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/1b9cb4ec-0b4d-473c-89e4-c69e5deccb0c)
 
 
 ## Using the Conflict Task to Understand Risky Behavior
@@ -23,7 +29,7 @@ By training many mice on this task, we can start to understand how different mic
 
 Here is an average plot of all of the mice I trained on this task. All mice showed some of the same basic behaviors as the example mouse: during the low conflict task, they tend to go to the platform as soon as the sound starts, since there is no incentive for them to risk a shock. However, during high conflict sessions, the mice tend to stay away from the platform during the sound longer in order to get a reward. 
 
-![group behavior alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/58b089a0-0419-435f-9864-30d771cbb265)
+![group behavior alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/f13f205b-997c-467d-83e9-b0a8c691fdba)
 
 ## Individual Variation in Willingness to Take Risks
 
@@ -31,7 +37,7 @@ Although most mice behave the same during low conflict sessions, there is a lot 
 
 During high conflict sessions, when the sound is off, the mice can't get the reward, though many of them choose to wait in the reward zone. However, once the sound begins to play, we see a much larger variation in strategies. Some mice are much more risk prone (RP), choosing to spend as much time as possible in the reward zone, even if it means getting shocked more often. Some mice are risk-averse (RA), almost immediately returning to the platform once the sound plays, and receiving very little reward as a result.
 
-![risk averse vs risk prone alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/bd0d476c-9890-45f5-b3ac-fc0fe2b6f082)
+![risk averse vs risk prone alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/cc98c835-bd60-4990-8b77-f8b478cc9000)
 
 ## Differences in Brain Activity Between Risk-Prone and Risk-Averse Mice
 
@@ -39,7 +45,7 @@ We are beginning to see some differences in the brains of risk-averse vs. risk-p
 
 With this analysis package, we can compare brain responses to major events in the conflict task, like the sound onset (CS, in these graphs) and the shock. We can see that this brain area doesn't have any difference in shock response across the high conflict and the low conflict sessions. However, the risk-averse mice show sound responses only in the high conflict sessions. This could indicate that this brain area biases mice to avoid risks, or weigh avoiding a risk as more important than seeking a reward. 
 
-![photometry responses alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/225ac06d-b968-41d3-b66b-07894a551f73)
+![photometry responses alone](https://github.com/SaraEBoyle/Conflict-Task-Analysis-Package/assets/83416542/d383d711-a989-434c-86d9-8099a9e0031f)
 
 ## How to Use This Package
 
